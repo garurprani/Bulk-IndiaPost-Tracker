@@ -1,20 +1,6 @@
-# 📦 IndiaPost Consignment Tracker — Vulnerability PoC
+# 📦 IndiaPost Consignment Tracker
 
 This Python script demonstrates a **vulnerability in the India Post consignment tracking system**. It allows tracking any valid consignment number by bypassing captcha and security mechanisms using **hardcoded cookies and hidden ASP.NET form parameters**.
-
----
-
-## 🔍 Vulnerability Summary
-
-The India Post tracking portal (`https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx`) relies on hidden ASP.NET fields such as:
-
-- `__VIEWSTATE`
-- `__EVENTVALIDATION`
-- `__REQUESTDIGEST`
-
-...to verify form integrity and session state. Normally, the system also uses a **captcha** and **session cookies** to prevent automation.
-
-> However, with static values for these parameters (captured via browser dev tools), and by passing specific cookies, the site **accepts requests without human interaction** — meaning the captcha can be bypassed.
 
 ---
 
