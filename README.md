@@ -32,8 +32,6 @@ You need to **manually insert valid session values** (captured from your own bro
   1. Submitting a valid tracking number
   2. Using browser dev tools → Network → Form data & cookies
 
-> **Never share your own cookies on GitHub!** They contain session-specific data and may allow impersonation.
-
 ---
 
 ### 🧾 Parameters You Need to Update:
